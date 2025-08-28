@@ -1,0 +1,28 @@
+//print the middle row and middle column of a odd square matrix
+#include<iostream>
+#include<climits>
+using namespace std;
+int main(){
+ int n;
+ cout<<"Enter the size of odd square matrix";
+ cin>>n;
+ int a[n][n];
+ for(int i=0;i<n;i++){
+    for(int j=0;j<n;j++){
+        cin>>a[i][j];
+    }
+ }
+
+ for(int i=0;i<n;i++){
+    for(int j=0;j<n;j++){
+        if(i==n/2 || j==n/2){
+            cout<<a[i][j]<<" ";
+        }
+        else { cout<<" ";}
+    }
+    cout<<endl;
+ }
+ 
+
+  return 0;
+}
